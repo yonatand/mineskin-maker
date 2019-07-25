@@ -1,21 +1,11 @@
 <?php
 
-
-
-
 function toSkin($img, $size, $iscolored=false, $twosided=false, $output='out')
 {
-
-    // get the input file extension and create a GD resource from it
-    
-
-    // now we have the image loaded up and ready for the effect to be applied
-    // get the image size
     $height = $size[1];
     $width = $size[0];
 
 
-    // save the image
     $output_name = $output  . '_' . time() . '.png';
 	
 	$thumb=imagecreatetruecolor(16, 32);
